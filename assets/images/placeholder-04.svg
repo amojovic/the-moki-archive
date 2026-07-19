@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img" aria-label="Specimen plate — generative II">
+  <rect width="600" height="400" fill="#0d0a14"/>
+  <rect x="8" y="8" width="584" height="384" fill="none" stroke="#4a2f5e" stroke-width="1"/>
+  <g fill="none" stroke-width="1.5">
+    <polygon points="300,70 470,180 405,330 195,330 130,180" stroke="#5b3d82"/>
+    <polygon points="300,110 430,190 383,300 217,300 170,190" stroke="#7a54a8"/>
+    <polygon points="300,150 388,200 360,270 240,270 212,200" stroke="#a884e0"/>
+    <polygon points="300,190 346,210 332,246 268,246 254,210" stroke="#c14a5c"/>
+  </g>
+  <g fill="#a884e0">
+    <circle cx="300" cy="70" r="3"/>
+    <circle cx="470" cy="180" r="3"/>
+    <circle cx="405" cy="330" r="3"/>
+    <circle cx="195" cy="330" r="3"/>
+    <circle cx="130" cy="180" r="3"/>
+  </g>
+  <text x="24" y="376" font-family="Consolas, monospace" font-size="13" fill="#61586f">MOKI // IMG-04 &#183; GENERATIVE — SEED 0x1A</text>
+</svg>
