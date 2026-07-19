@@ -78,7 +78,7 @@
     var m = "";
     if (entry.audio) {
       m +=
-        '<div class="material-audio"><div class="audio-caption">AUDIO SPECIMEN</div>' +
+        '<div class="material-audio"><div class="audio-caption">AUDIO FILE</div>' +
         '<audio controls preload="none" src="' + esc(entry.audio) + '"></audio></div>';
     }
     if (entry.links && entry.links.length) {
@@ -231,7 +231,7 @@
     var entriesRoot = document.getElementById("entries");
 
     if (!DATA.length) {
-      entriesRoot.innerHTML = '<div class="entries-empty">No specimens catalogued yet.</div>';
+      entriesRoot.innerHTML = '<div class="entries-empty">No entries catalogued yet.</div>';
     } else {
       DATA.forEach(function (entry) {
         entriesRoot.appendChild(renderEntry(entry));
