@@ -326,7 +326,7 @@ a:visited { color: #a98fd6; }
 
 /* end-of-list marker + scroll-past space, so the pane scrolls even when short */
 .entries::after {
-  content: "\2014\00a0\00a0END OF CURRENT RECORDS\00a0\00a0\2014";
+  content: "\2014  END OF CURRENT RECORDS  \2014";
   flex: 0 0 auto;
   min-height: 48vh;
   display: flex;
