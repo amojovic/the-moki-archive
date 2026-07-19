@@ -33,38 +33,27 @@ window.MOKI_ENTRIES = [
     title: "DFA BUILDER",
     date: "2026-07-19",
     tags: ["game", "software"],
-    images: [],
+    images: [
+      "assets/images/dfa-builder-01.png",
+      "assets/images/dfa-builder-02.png"
+    ],
     text: `
-      <p>A browser puzzle game about <strong>deterministic finite automata</strong>.
-      You are handed a description of a <em>language</em> — a set of strings, such as
-      <code>"binary strings ending in 01"</code> or <code>"strings divisible by 3"</code> —
-      and your job is to build a machine on the canvas that accepts <em>exactly</em>
-      that language and nothing else.</p>
+      <p>A <strong>deterministic finite automaton</strong> (DFA) is one of the
+      simplest kinds of computing machine. It has a handful of <em>states</em> and
+      reads a string one symbol at a time, following a labelled arrow from state to
+      state. Each state has exactly one arrow per possible symbol — that is the
+      "deterministic" part; there is never a choice to make. When the string runs
+      out, the machine <em>accepts</em> it if it ended in a state marked as final,
+      and rejects it otherwise.</p>
 
-      <p>An automaton reads a string one symbol at a time, moving between states along
-      labelled arrows. If it finishes in a <em>final</em> state, the string is accepted.
-      Tasks are generated at random from a library of templates, so the well never
-      quite runs dry.</p>
+      <p>That simple rule is enough to recognise whole families of strings —
+      "everything ending in <code>01</code>", "everything with an even number of
+      <code>1</code>s", and so on.</p>
 
-      <p><strong>How to play</strong></p>
-      <ul>
-        <li><strong>Right-click</strong> empty space to place a state (S0, S1, S2…).</li>
-        <li><strong>Right-click a state</strong> to give it a role — start (green),
-            final (blue double-ring), or a dead trap (red).</li>
-        <li><strong>Left-click and drag</strong> to move states around; hold the
-            <strong>middle mouse</strong> to pan, <strong>wheel</strong> to zoom.</li>
-        <li>Pick a symbol in the sidebar, click the source state, then the target
-            state, to draw a labelled transition. Self-loops are allowed.</li>
-        <li>Every non-dead state needs an outgoing arrow for <em>every</em> symbol —
-            that's the rule that makes it deterministic.</li>
-      </ul>
-
-      <p>The status indicator flips from a red <em>✗ not complete</em> to a green
-      <em>✓ complete</em> the moment your automaton passes verification. Skip a task
-      if it stumps you. Built as pure static files — no accounts, no loading screens,
-      it just runs.</p>
+      <p>So this is a game based on it: you are given a language to recognise, and
+      you build the automaton that accepts exactly that language. The how-to-play
+      lives inside the game itself.</p>
     `,
-    textHeight: "tall",
     audio: null,
     links: [
       { label: "Play in browser", url: "https://amojovic.github.io/dfa-builder/" },
