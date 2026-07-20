@@ -394,7 +394,7 @@ a:visited { color: #a98fd6; }
 
 /* --- field 2: image carousel (large, always fully contained) --- */
 .carousel { position: relative; max-width: 100%; background: var(--inset); border: 1px solid var(--border); }
-.carousel-viewport { position: relative; overflow: hidden; aspect-ratio: 16 / 10; min-height: 300px; background: var(--inset); }
+.carousel-viewport { position: relative; overflow: hidden; aspect-ratio: 16 / 10; min-height: 240px; background: var(--inset); }
 .carousel-track { width: 100%; height: 100%; }
 .carousel-slide { display: none; width: 100%; height: 100%; }
 .carousel-slide.active { display: block; }
@@ -414,9 +414,9 @@ a:visited { color: #a98fd6; }
   background: rgba(8, 6, 13, 0.82); border: 1px solid var(--border); padding: 1px 8px;
 }
 /* center the image both ways within its (often taller) column, with side breathing room */
-.field-image { display: flex; flex-direction: column; align-items: center; padding-left: 24px; padding-right: 24px; }
+.field-image { display: flex; flex-direction: column; align-items: center; padding-left: 16px; padding-right: 16px; }
 .field-image .field-label { align-self: stretch; }
-.field-image .carousel { width: 100%; max-width: 480px; margin-top: auto; margin-bottom: auto; }
+.field-image .carousel { width: 100%; max-width: 440px; margin-top: auto; margin-bottom: auto; }
 .field-image .no-image {
   font-family: var(--font-crt); font-size: 14px; color: var(--text-faint);
   text-align: center; padding: 60px 12px; border: 1px dashed var(--border); background: var(--inset);
