@@ -51,7 +51,7 @@
       .map(function (src, i) {
         return (
           '<div class="carousel-slide' + (i === 0 ? " active" : "") + '">' +
-          '<img src="' + esc(src) + '" alt="' + esc(entry.title) + " — plate " + (i + 1) +
+          '<img src="' + esc(src) + '" loading="lazy" decoding="async" alt="' + esc(entry.title) + " — plate " + (i + 1) +
           '" data-index="' + i + '"></div>'
         );
       })
